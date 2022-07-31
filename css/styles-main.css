@@ -33,7 +33,7 @@ p {
 }
 
 .hero-image {
-  background-image: url("/images/hero.png");
+  background-image: url("/images/hero-homepage.png");
   background-position: center;
   background-size: cover;
 }
@@ -107,6 +107,23 @@ p {
 .project-icons {
   font-size: 22px;
   line-height: 1;
+}
+
+.image-about-page {
+  border-radius: 50%;
+}
+
+.about-part {
+  margin-top: 100px;
+}
+
+.about-part h1 {
+  color: var(--secondary-color);
+  font-size: 60px;
+}
+
+.about-part h2 {
+  color: var(--additional-color);
 }
 
 @media (max-width: 900px) {
