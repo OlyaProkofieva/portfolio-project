@@ -35,6 +35,7 @@ p {
 
 .about-main {
   margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .about-image {
@@ -76,7 +77,7 @@ p {
 }
 
 .competence {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .competence h3 {
@@ -91,4 +92,31 @@ p {
 
 .image-competence {
   border-radius: 30px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .about-info {
+    margin-top: 30px;
+  }
+
+  .about-info h2 {
+    text-align: center;
+  }
+
+  .about-info p {
+    text-align: center;
+  }
+
+  .competence {
+    margin-top: 50px;
+  }
+
+  .competence p {
+    text-align: center;
+  }
 }

@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #222831;
+  --secondary-color: #e8e8e8;
+  --additional-color: #f05454;
+  --heading-font-family: "Roboto", sans-serif;
+  --default-font-family: "Dosis", sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font-family);
+}
+
+h1 {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 32px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--default-font-family);
+  font-size: 18px;
+}
+
+.image-projects {
+  border-radius: 30px;
+}
+
+.btn-branding {
+  background-color: var(--additional-color);
+  color: var(--secondary-color);
+  padding: 10px 25px;
+  font-family: var(--default-font-family);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 30px;
+}
+
+.btn-branding:hover {
+  color: var(--secondary-color);
+}
