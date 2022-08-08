@@ -233,7 +233,7 @@ footer .github-link {
 }
 
 .competence h3 {
-  margin-top: 10px;
+  margin-top: 0px;
   font-size: 36px;
   text-transform: uppercase;
 }
@@ -347,8 +347,8 @@ footer .github-link {
   }
 
   .btn-branding {
-    padding: 5px 15px;
-    font-size: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
   }
 
   /*--------index.html---------*/
