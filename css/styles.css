@@ -39,43 +39,42 @@ a:hover {
   color: var(--additional-color);
 }
 
-nav {
-  padding: 0;
+li {
+  padding: 0 10px 0 10px;
 }
 
-nav h3 {
+li a {
+  color: var(--secondary-color) !important;
+}
+
+li a:hover {
+  color: var(--additional-color) !important;
+}
+
+.navbar-branding {
+  font-family: var(--heading-font-family);
+  background-color: var(--primary-color) !important;
+}
+
+.navbar-name {
   text-transform: uppercase;
   line-height: 1;
-  margin: 20px;
   font-size: 20px;
+  font-weight: 600;
+  color: var(--secondary-color) !important;
 }
 
-nav .main-home-link:hover {
-  color: var(--secondary-color);
+.navigation {
+  justify-content: flex-end;
 }
 
-nav ul {
-  list-style: none;
-  margin: 18px 0 18px 0;
-}
-
-nav li {
-  display: inline;
-  margin: 12px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-nav .active {
-  color: var(--additional-color);
+.active {
+  color: var(--additional-color) !important;
 }
 
 footer {
   margin-top: 80px;
-  padding: 5px;
+  padding-top: 20px;
   background-color: var(--complementary-color);
 }
 
@@ -96,6 +95,8 @@ footer h3 {
 
 footer p {
   font-size: 18px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 footer .github-link {
@@ -107,20 +108,6 @@ footer .github-link {
   background-image: url("/images/hero-homepage.png");
   background-position: center;
   background-size: cover;
-}
-
-.hero {
-  padding: 160px 30px;
-}
-
-.hero h2 {
-  font-size: 36px;
-}
-
-.hero p {
-  font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 60px;
 }
 
 .btn-branding {
@@ -139,6 +126,21 @@ footer .github-link {
 }
 
 /*--------index.html---------*/
+
+.hero {
+  margin-top: 55px;
+  padding: 160px 30px;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
 
 .main-project-part {
   position: relative;
@@ -185,7 +187,7 @@ footer .github-link {
 /*--------about.html---------*/
 
 .about-main {
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom: 100px;
 }
 
@@ -233,6 +235,7 @@ footer .github-link {
 .competence h3 {
   margin-top: 10px;
   font-size: 36px;
+  text-transform: uppercase;
 }
 
 .competence p {
@@ -246,14 +249,23 @@ footer .github-link {
 
 /*--------projects.html---------*/
 
+.project-page {
+  margin-top: 75px;
+}
+
 .project-name {
   font-size: 32px;
-  margin-top: 40px;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .about-project {
   font-size: 18px;
+}
+
+.highlight {
+  font-weight: 500;
+  color: var(--additional-color);
 }
 
 .project-image {
@@ -263,7 +275,8 @@ footer .github-link {
 /*--------contact.html---------*/
 
 .get-in-touch {
-  padding: 270px 30px;
+  margin-top: 55px;
+  padding: 245px 30px;
 }
 
 .get-in-touch h1 {
@@ -303,6 +316,10 @@ footer .github-link {
 @media (max-width: 900px) {
   /*--------MAIN---------*/
 
+  li {
+    padding: 0;
+  }
+
   h1 {
     font-size: 46px;
     color: var(--secondary-color);
@@ -313,9 +330,28 @@ footer .github-link {
     margin-top: 40px;
   }
 
+  footer i {
+    font-size: 20px;
+  }
+
+  footer h3 {
+    font-size: 20px;
+  }
+
+  footer .github-link {
+    font-size: 15px;
+  }
+
   .hero-image {
     background-position: right;
   }
+
+  .btn-branding {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+
+  /*--------index.html---------*/
 
   .hero {
     text-align: center;
@@ -332,13 +368,6 @@ footer .github-link {
     font-size: 17px;
     margin-bottom: 20px;
   }
-
-  .btn-branding {
-    padding: 5px 15px;
-    font-size: 15px;
-  }
-
-  /*--------index.html---------*/
 
   .project-info {
     width: 250px;
