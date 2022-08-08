@@ -1,0 +1,393 @@
+:root {
+  --primary-color: #222831;
+  --secondary-color: #e8e8e8;
+  --additional-color: #f05454;
+  --complementary-color: #1a232f;
+  --heading-font-family: "Roboto", sans-serif;
+  --default-font-family: "Dosis", sans-serif;
+}
+
+/*--------MAIN---------*/
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font-family);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 92px;
+  color: var(--additional-color);
+}
+
+h3 {
+  font-size: 36px;
+  margin-top: 80px;
+}
+
+p {
+  font-family: var(--default-font-family);
+}
+
+a:hover {
+  color: var(--additional-color);
+}
+
+nav {
+  padding: 0;
+}
+
+nav h3 {
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 20px;
+  font-size: 20px;
+}
+
+nav .main-home-link:hover {
+  color: var(--secondary-color);
+}
+
+nav ul {
+  list-style: none;
+  margin: 18px 0 18px 0;
+}
+
+nav li {
+  display: inline;
+  margin: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+nav .active {
+  color: var(--additional-color);
+}
+
+footer {
+  margin-top: 80px;
+  padding: 5px;
+  background-color: var(--complementary-color);
+}
+
+footer i {
+  font-size: 35px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+footer h3 {
+  line-height: 1;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+footer .github-link {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.hero-image {
+  background-image: url("/images/hero-homepage.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  padding: 160px 30px;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.btn-branding {
+  background-color: var(--additional-color);
+  color: var(--secondary-color);
+  padding: 10px 25px;
+  font-family: var(--default-font-family);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 30px;
+}
+
+.btn-branding:hover {
+  color: var(--secondary-color);
+}
+
+/*--------index.html---------*/
+
+.main-project-part {
+  position: relative;
+}
+
+.main-project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  filter: grayscale(100%) contrast(120%);
+}
+
+.main-project-image:hover {
+  filter: none;
+  transition: all 200ms ease-in-out;
+}
+
+.main-project-info {
+  padding: 5px;
+  width: 290px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+}
+
+.main-project-info h2 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.main-project-icons {
+  font-size: 22px;
+  line-height: 1;
+}
+
+/*--------about.html---------*/
+
+.about-main {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.about-image {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--secondary-color);
+}
+
+.about-info {
+  margin-top: 120px;
+}
+
+.about-info h1 {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-size: 60px;
+}
+
+.about-info h2 {
+  color: var(--additional-color);
+}
+
+.about-info p {
+  font-size: 18px;
+}
+
+.social-icons {
+  font-size: 35px;
+}
+
+.social-icons a {
+  color: var(--secondary-color);
+}
+
+.social-icons a:hover {
+  color: var(--additional-color);
+}
+
+.competence {
+  margin-top: 50px;
+}
+
+.competence h3 {
+  margin-top: 10px;
+  font-size: 36px;
+}
+
+.competence p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.image-competence {
+  border-radius: 30px;
+}
+
+/*--------projects.html---------*/
+
+.project-name {
+  font-size: 32px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.about-project {
+  font-size: 18px;
+}
+
+.project-image {
+  border-radius: 30px;
+}
+
+/*--------contact.html---------*/
+
+.get-in-touch {
+  padding: 270px 30px;
+}
+
+.get-in-touch h1 {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-size: 90px;
+}
+
+.get-in-touch h2 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  color: var(--additional-color);
+}
+
+.contact-part h3 {
+  font-size: 32px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.contact-part p {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+}
+
+.contact-icons {
+  font-size: 28px;
+}
+
+.contact-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/*--------RESPONSIVE---------*/
+
+@media (max-width: 900px) {
+  /*--------MAIN---------*/
+
+  h1 {
+    font-size: 46px;
+    color: var(--secondary-color);
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .hero-image {
+    background-position: right;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 110px 0px;
+    color: var(--additional-color);
+    backdrop-filter: blur(10px);
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .btn-branding {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+
+  /*--------index.html---------*/
+
+  .project-info {
+    width: 250px;
+  }
+
+  .project-info h2 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .project-icons {
+    font-size: 16px;
+  }
+
+  /*--------about.html---------*/
+
+  .about-info {
+    margin-top: 30px;
+  }
+
+  .about-info h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .about-info h2 {
+    text-align: center;
+  }
+
+  .about-info p {
+    text-align: center;
+  }
+
+  .competence {
+    margin-top: 50px;
+  }
+
+  .competence p {
+    text-align: center;
+  }
+
+  /*--------contact.html---------*/
+
+  .get-in-touch {
+    padding: 80px 30px;
+    backdrop-filter: blur(10px);
+  }
+
+  .get-in-touch h1 {
+    font-size: 56px;
+  }
+}
